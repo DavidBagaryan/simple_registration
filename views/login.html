@@ -1,0 +1,21 @@
+<form method="post">
+
+    <p><label id="login">имя</label></p>
+    <input title="login" type="text" name="login" value="{{ login }}"/>
+
+    <p><label id="password">пароль</label></p>
+    <input title="password" type="password" name="password" value="{{ password }}"/>
+
+    <p>
+        <label id="remember_me">запомнить меня</label>
+        <input title="remember_me" type="checkbox" name="remember_me" {{ checked }}/>
+    </p>
+    <p>
+        <button name="do_login" type="submit" formaction="/?action=login">войти</button>
+    </p>
+    <hr/>
+    <p>
+        <button name="do_signup" type="submit" formaction="/?action=signup">зарегистрироваться</button>
+    </p>
+
+</form>

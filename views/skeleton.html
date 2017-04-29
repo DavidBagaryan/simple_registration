@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <title>{{ action }}</title>
+</head>
+<body>
+<div class="container">
+    <h2>{{ action }}</h2>
+
+    {% if session == 0 %}
+
+    {% include "#{action}.html" %}
+
+    <h3>{{ error }}</h3>
+
+    {% else %}
+
+    <p>пользователь <b>{{ session.user_login }}</b> авторизован</p>
+    <a href="/?action=logout">выйти</a>
+
+    {% endif %}
+</div>
+</body>
+</html>
