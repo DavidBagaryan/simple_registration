@@ -22,4 +22,4 @@ $data = [
 
 echo $twig->render("skeleton.html", $data);
 
-var_dump($_POST, $_GET, $_SESSION);
+//var_dump($_POST, $_GET, $_SESSION);
