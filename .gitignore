@@ -1,0 +1,5 @@
+.idea
+vendor
+composer.lock
+desktop.ini
+mysql_dump
